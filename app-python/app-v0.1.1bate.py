@@ -1,3 +1,7 @@
+"""
+计算王者训练系统
+版本：v0.1.1-beta01
+"""
 import tkinter as tk
 from tkinter import ttk, messagebox
 import time
@@ -12,8 +16,6 @@ class LoginApp:
         self.root.title('欢迎来到计算王者')
         self.root.geometry('1000x800')
         self.root.resizable(True, True)
-        
-        # 创建欢迎界面
         self.create_login_interface()
         
     def create_login_interface(self):
@@ -78,7 +80,7 @@ class LoginApp:
         # 版权信息
         tk.Label(
             self.root, 
-            text='© 2025 计算王者训练系统 v1.0.0', 
+            text='© 2025 计算王者训练系统 v0.1.1-beta01', 
             font=('Micsoft Yahei UI', 10),
             fg='gray'
         ).pack(side=tk.BOTTOM, pady=10)
@@ -174,8 +176,8 @@ class LoginApp:
             if not password:
                 status_var.set("密码不能为空！")
                 return
-            if len(password) < 4:
-                status_var.set("密码长度至少4位！")
+            if len(password) < 6:
+                status_var.set("密码长度至少6位！")
                 return
             if password != confirm:
                 status_var.set("两次输入的密码不一致！")
@@ -878,9 +880,7 @@ class MathTrainerApp:
             [("底面积", 5), ("高度", 1)],
             self.vol_prism
         )
-    def vol_cone(self, s, h):
-        """计算棱锥体积"""
-        return (1/3) * s * h
+
 
     def calculate_cone_volume(self):
         """计算棱锥体积"""

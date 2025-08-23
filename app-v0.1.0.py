@@ -1,3 +1,7 @@
+"""
+计算王者训练系统
+版本：v0.1.0-RC
+"""
 import tkinter as tk
 from tkinter import ttk, messagebox
 import time
