@@ -4,16 +4,21 @@ import time
 import random
 import math
 import pickle
-import os
+import os   
 
 class LoginApp:
     def __init__(self, root):
+        # 设置根窗口
         self.root = root
+        # 设置窗口标题
         self.root.title('欢迎来到计算王者')
+        # 设置窗口大小
         self.root.geometry('1000x800')
+        # 设置窗口是否可以调整大小
         self.root.resizable(True, True)
         
         # 创建欢迎界面
+        # 创建登录界面
         self.create_login_interface()
         
     def create_login_interface(self):
