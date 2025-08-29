@@ -1,5 +1,8 @@
+> [!NOTE] # 停止维护此仓库
+> 此项目已被新项目代替，新项目将在原项目的基础上进行
+> 新项目地址[www.github.com/jourious/biomather-public](www.github.com/jourious/biomather-public)
 
-# 计算王者 Mather
+## 计算王者 Mather
 
 > [!NOTE]
 > Only Chinese Edition is currently available.
